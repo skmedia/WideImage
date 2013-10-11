@@ -35,12 +35,12 @@ class TGA
 {
 	public function load($uri)
 	{
-		return de77\TGA::imagecreatefromtga($uri);
+		return @ de77\TGA::imagecreatefromtga($uri);
 	}
 	
 	public function loadFromString($data)
 	{
-		return de77\TGA::imagecreatefromstring($data);
+		return @ de77\TGA::imagecreatefromstring($data);
 	}
 	
 	public function save($handle, $uri = null)
