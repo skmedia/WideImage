@@ -34,12 +34,12 @@ class BMP
 {
 	public function load($uri)
 	{
-		return de77\BMP::imagecreatefrombmp($uri);
+		return @ de77\BMP::imagecreatefrombmp($uri);
 	}
 	
 	public function loadFromString($data)
 	{
-		return de77\BMP::imagecreatefromstring($data);
+		return @ de77\BMP::imagecreatefromstring($data);
 	}
 	
 	public function save($handle, $uri = null)
